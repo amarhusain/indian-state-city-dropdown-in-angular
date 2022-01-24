@@ -1,0 +1,25 @@
+
+<div class="container">
+        <div class="row">
+                <div class="col-6 mb-2">
+                        <label for="inputEmail4" class="form-label">State</label>
+                        <select class="form-select form-select-sm" (change)="onStateChange($event)" aria-label="Default select example">
+                                <option selected>Select a state</option>
+                                <option [value]="state" *ngFor="let state of state_list; index as i">{{state}}</option>
+                                
+                        </select>
+                </div>
+                <div class="col-6 mb-2">
+                        <label for="inputPassword4" class="form-label">City/Town</label>                                             
+
+                                <select class="form-select form-select-sm" (change)="onCityChange($event)" aria-label="Default select example">
+                                <option selected >Select a city</option>
+                                <option [value]="i" *ngFor="let city of city_list; index as i">{{city}}</option>
+                                
+                        </select>
+
+                </div>
+        </div>
+                
+</div>
+                       
